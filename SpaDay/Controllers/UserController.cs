@@ -23,6 +23,8 @@ namespace SpaDay.Controllers
             return View();
         }
 
+        [HttpPost]
+        [Route("/user")]
         public IActionResult SubmitAddUserForm(User newUser, string verify)
         {
             if (newUser.Password == verify)
@@ -32,9 +34,9 @@ namespace SpaDay.Controllers
             }
             else
             {
-                ViewBag.error = "Passwords do not match. Try again.";
-                ViewBag.Username = newUser.Username;
-                ViewBag.Email = newUser.Email;
+                ViewBag.Error = "Passwords do not match. Try again.";
+                //ViewBag.Username = newUser.Username;
+                //ViewBag.Email = newUser.Email;
 
                 return View("Add");
             }
