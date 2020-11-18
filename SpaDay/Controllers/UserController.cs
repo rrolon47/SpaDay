@@ -37,7 +37,7 @@ namespace SpaDay.Controllers
             {
                 if (login.Password == login.VerifyPassword)
                 {
-                    User newUser = new User()
+                    User newUser = new User
                     {
                         Username = login.Username,
                         Email = login.Email,
