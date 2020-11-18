@@ -15,7 +15,6 @@
     Username:
     <br>
     <div class="form-group">
-        <label asp-for="Username">Username</label>
         <input asp-for="Username" />
         <span asp-validation-for="Username"></span>
     </div>
@@ -23,14 +22,15 @@
     Email:
     <br>
     <div class="form-group">
-        <label asp-for="Email">Email</label>
+
         <input type="email" asp-for="Email" />
         <span asp-validation-for="Email"></span>
     </div>
     <br>
     Password:
+    <br>
     <div class="form-group">
-        <label asp-for="Password">Password</label>
+
         <input type="password" asp-for="Password" />
         <span asp-validation-for="Password"></span>
     </div>
@@ -38,7 +38,6 @@
     Confirm Password:
     <br>
     <div class="form-group">
-        <label asp-for="VerifyPassword">Verify Password</label>
         <input type="password" asp-for="VerifyPassword" />
         <span asp-validation-for="VerifyPassword"></span>
     </div>
